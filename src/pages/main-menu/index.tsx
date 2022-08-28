@@ -12,7 +12,6 @@ const MainMenu = () => {
     const TITLE_STYLE = {
         color: `hsl(${hue}, 40%, 50%)`
     }
-
     const handleHue = (increment: number): void => {
         if (hue <= 0) setHueDirection(true);
         if (hue >= 360) setHueDirection(false);
