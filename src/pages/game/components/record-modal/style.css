@@ -1,0 +1,14 @@
+.record-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 60px;
+
+    font-size: 2rem;
+    border: none;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+.Leaderboard {
+    width: 500px;
+}
+
+.RecordItem .content, .records-header{
+    display: grid;
+    grid-template-columns: 10% 50% 15% 25%;
+    justify-items: center;
+    align-items: center;
+}
+
+.records-header {
+    margin: .5rem 0;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.RecordItem {
+    color: gray;
+}
+
+
+.records .RecordItem:nth-child(-n+3) {
+    font-weight: 700;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); */
+}
+
+.records .RecordItem:nth-child(1) {
+    color: var(--GOLD-COLOR);
+}
+
+.records .RecordItem:nth-child(2) {
+    color: var(--SILVER-COLOR);
+}
+
+.records .RecordItem:nth-child(3) {
+    color: var(--BRONZE-COLOR)
+}
+
+.medal {
+    aspect-ratio: 1 / 1;
+    width: 2rem;
+}
+
+.name {
+    justify-self: left;   
+}
+
+.RecordItem .name {
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.time {
+    justify-self: right;
+}
+
+.Leaderboard .controls {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Leaderboard .controls span {
+    display: flex;
+    gap: 10px;
+}
